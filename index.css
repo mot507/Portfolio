@@ -1,0 +1,431 @@
+* {
+
+
+
+
+    margin: 0;
+
+
+
+
+    box-sizing: border-box;
+
+
+
+
+    font-family: 'segoe ui';
+
+
+
+
+}
+
+
+
+
+body {
+
+    background-color: black;
+
+}
+
+
+
+
+
+header {
+
+
+
+
+    display: flex;
+
+
+
+
+    align-items: center;
+
+
+
+
+    background-color: rgb(59, 54, 59);
+
+
+
+
+    padding: 8px;
+
+
+
+
+}
+
+
+
+
+
+
+
+.logo {
+
+
+
+
+    color: rgb(255, 0, 0);
+
+
+
+
+    font-size: 22px;
+
+
+
+
+    font-weight: 700;
+
+
+
+
+
+
+    margin-right: auto;
+
+
+
+
+}
+
+
+
+
+
+
+
+.nav-link {
+
+
+
+
+    color: black;
+
+
+
+
+    padding: 8px;
+
+
+
+
+    background-color: orange;
+
+
+
+
+    text-decoration: none;
+
+
+
+
+    margin-left: 16px;
+
+
+
+
+}
+
+
+
+
+
+
+
+.nav-link:hover {
+
+
+
+
+    background-color: bisque;
+
+
+
+
+}
+
+
+
+
+
+
+
+.banner {
+
+
+
+
+    display: flex;
+
+
+
+
+    align-items: center;
+
+
+
+
+    justify-content: flex-end;
+
+
+
+
+    background-image: url(https://i.pinimg.com/originals/b8/72/70/b872707e0aa9d186a7034c6c5269acf1.jpg);
+
+
+
+
+    background-position: center;
+
+
+
+
+    background-size: cover;
+
+
+
+
+    height: 600px;
+
+
+
+
+}
+
+
+
+
+
+
+
+.banner-headings {
+
+
+
+
+    background-color: rgb(59, 59, 59);
+
+
+
+
+    padding: 10px;
+
+
+
+
+    transform: translateY(-100%);
+
+
+
+
+}
+
+
+
+
+
+
+
+.banner-heading {
+
+
+
+
+    color: red;
+
+
+
+
+    font-size: 60px;
+
+
+
+
+    font-weight: 900;
+
+
+
+
+    margin-bottom: 9px;
+
+
+
+
+    margin-top: -30px;
+
+
+
+
+}
+
+
+
+
+
+
+
+.banner-subheading {
+
+
+
+
+    color: white;
+
+
+
+
+    margin-top: 10px;
+
+
+
+
+    font-size: 30px;
+
+
+
+
+}
+
+
+
+
+.line {
+
+    color: white;
+
+    background-color: red;
+
+    text-align: center;
+
+    padding: 10px
+}
+
+
+
+
+.review-row {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 16px;
+
+    padding: 32px;
+
+    background-color: black;
+
+    color: white;
+
+    text-align: center;
+
+}
+
+
+
+
+.review-card {
+
+    display: flex;
+
+    flex-direction: column;
+
+    max-width: 300px;
+
+    border: 2px solid red;
+
+}
+
+
+
+
+.review-card-image {
+
+    width: 100%;
+
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+
+    .review-row {
+
+        flex-direction: column;
+
+    }
+
+}
+
+
+
+
+.button-row {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+
+
+.button {
+
+    border-radius: 140px;
+
+    font-size: xx-large;
+
+    font-weight: 900;
+
+    background-color: red;
+
+    color: white;
+
+    border: 5px solid white;
+
+}
+
+
+.game-desc-card{
+    display: flex;
+    border: 2px solid red;
+    width: 100%;
+    max-width: 900px;
+
+    > img{
+        width: 200px;
+        height: 200px;
+        border: 1px solid green;
+    }
+
+}
+
+.game-info-container{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: white;
+    width: 100%;
+    justify-content: space-between;
+
+    > .button {
+        align-self: flex-end;
+    }
+}
